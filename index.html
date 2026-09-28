@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Signalgrid — Google Data Analysis</title>
+<meta name="description" content="Signalgrid turns Google-scale data — Search, Maps, YouTube, Play — into clear, decision-ready insight.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header id="hd"><div class="wrap"><nav aria-label="Main">
+<a class="logo" href="#top"><i></i>Signalgrid</a>
+<button class="burger" aria-expanded="false" aria-controls="lk">Menu</button>
+<div class="links" id="lk"><a href="#features">Capabilities</a><a href="#about">Approach</a><a href="#work">Work</a><a href="#faq">FAQ</a>
+<button class="tg" id="tg" aria-label="Toggle light or dark theme">◐</button><a class="btn" href="#contact" style="color:var(--bg)">Start a project</a></div>
+</nav></div></header>
+
+<main id="top">
+<section class="hero"><canvas id="field" aria-hidden="true"></canvas>
+<div class="wrap"><div>
+<span class="eyebrow">Google data analysis studio</span>
+<h1>Find the <em>signal</em> inside Google-scale data.</h1>
+<p>We analyze Search, Maps, YouTube and Play datasets and turn billions of noisy rows into clear patterns your team can act on.</p>
+<div class="row"><a class="btn" href="#contact">Start analysis <span>→</span></a><a class="btn ghost" href="#work">See our work</a></div></div>
+<aside class="glass probe" aria-label="Interactive data preview"><h3>Live preview · pick a source</h3>
+<div class="tabs" id="tabs"></div><div class="bars" id="bars" role="img" aria-label="Sample weekly trend bars"></div>
+<small id="cap"></small><output id="val" aria-live="polite"></output>
+<form id="ask" hidden style="margin-top:16px"><label for="q" style="position:absolute;left:-9999px">Ask about this data</label><input id="q" maxlength="200" placeholder="Ask why this trend moved…" style="width:100%;padding:11px 16px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-size:.85rem"><p id="ans" role="status" style="font-size:.85rem;color:var(--mut);margin:10px 0 0"></p></form></aside></div></section>
+
+<section id="features"><div class="wrap"><div class="head rv"><span class="eyebrow">Capabilities</span><h2>Four ways we make data <em>speak</em>.</h2></div>
+<div class="grid4" id="feat"></div></div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div class="stack rv" aria-hidden="true"><div class="glass"><b>Raw</b><span>Exports, APIs, BigQuery tables</span></div><div class="glass"><b>Clean</b><span>Deduplicated, typed, validated</span></div><div class="glass"><b>Clear</b><span>Findings in plain language</span></div></div>
+<div class="rv"><span class="eyebrow">Why Signalgrid</span><h2>Rigor first. <em>Then</em> the pretty charts.</h2>
+<ul><li><strong>Reproducible pipelines.</strong> Every number traces back to a query you can rerun.</li><li><strong>Privacy-aware by design.</strong> We aggregate, sample and anonymize before analysis.</li><li><strong>Plain-language findings.</strong> Each report leads with what changed and what to do next.</li></ul></div></div></section>
+
+<section class="stats" aria-label="Results"><div class="wrap grid4">
+<div class="rv"><b data-n="48" data-s="M+">0</b><span>rows analyzed per project</span></div>
+<div class="rv"><b data-n="120" data-s="+">0</b><span>dashboards delivered</span></div>
+<div class="rv"><b data-n="97" data-s="%">0</b><span>pipeline accuracy checks passed</span></div>
+<div class="rv"><b data-n="14" data-s=" days">0</b><span>median time to first insight</span></div></div></section>
+
+<section id="work"><div class="wrap"><div class="head rv"><span class="eyebrow">Selected work</span><h2>Questions we've <em>answered</em>.</h2></div>
+<div class="proj" id="proj"></div></div></section>
+
+<section><div class="wrap"><div class="head rv"><span class="eyebrow">Kind words</span><h2>Sample client feedback.</h2></div>
+<div class="grid4" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))" id="qs"></div></div></section>
+
+<section id="faq"><div class="wrap faq"><div class="head rv"><span class="eyebrow">FAQ</span><h2>Good questions.</h2></div><div id="fq"></div></div></section>
+
+<section class="cta" id="contact"><div class="wrap"><div class="glass box rv"><span class="eyebrow">Ready when you are</span><h2>Let's turn your data into <em>decisions</em>.</h2>
+<form id="f" novalidate><label for="em" class="sr" style="position:absolute;left:-9999px">Email</label><input id="em" type="email" placeholder="you@company.com" autocomplete="email" required><input id="ms" type="text" maxlength="500" placeholder="What would you like to analyze?" aria-label="Project details"><button id="sb" class="btn" type="submit">Get in touch <span>→</span></button></form>
+<div class="msg" id="msg" role="status"></div></div></div></section>
+</main>
+
+<footer class="site"><div class="wrap"><div class="fg">
+<div><a class="logo" href="#top"><i></i>Signalgrid</a><p style="color:var(--mut);max-width:280px">Independent analysis of Google-scale data.</p></div>
+<div><h4>Explore</h4><a href="#features">Capabilities</a><a href="#about">Approach</a><a href="#work">Work</a></div>
+<div><h4>Connect</h4><a href="https://github.com" rel="noopener">GitHub</a><a href="https://www.linkedin.com" rel="noopener">LinkedIn</a><a href="https://x.com" rel="noopener">X</a></div>
+<div><h4>Contact</h4><a href="mailto:hello@signalgrid.example">hello@signalgrid.example</a><a href="#faq">Read the FAQ</a></div></div>
+<div class="copy">© 2026 Signalgrid. All rights reserved.</div></div></footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
